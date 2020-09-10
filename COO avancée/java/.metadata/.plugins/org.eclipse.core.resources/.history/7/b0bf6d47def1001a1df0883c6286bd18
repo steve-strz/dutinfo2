@@ -1,0 +1,148 @@
+package Membre;
+
+
+/**
+* @generated
+*/
+public class Membre extends Message {
+    
+    /**
+    * @generated
+    */
+    private String name;
+    
+    
+    /**
+    * @generated
+    */
+    private Forum forum;
+    
+    /**
+    * @generated
+    */
+    private Set<Message> message;
+    
+    /**
+    * @generated
+    */
+    private Set<Message> message;
+    
+    /**
+    * @generated
+    */
+    private Set<Message> message;
+    
+    /**
+    * @generated
+    */
+    private Set<Forum> forum;
+    
+    
+    /**
+    * @generated
+    */
+    private String getName() {
+        return this.name;
+    }
+    
+    /**
+    * @generated
+    */
+    private String setName(String name) {
+        this.name = name;
+    }
+    
+    
+    /**
+    * @generated
+    */
+    public Forum getForum() {
+        return this.forum;
+    }
+    
+    /**
+    * @generated
+    */
+    public Forum setForum(Forum forum) {
+        this.forum = forum;
+    }
+    
+    /**
+    * @generated
+    */
+    public Forum getForum() {
+        return this.forum;
+    }
+    
+    /**
+    * @generated
+    */
+    public Forum setForum(Forum forum) {
+        this.forum = forum;
+    }
+    
+    /**
+    * @generated
+    */
+    public Message getMessage() {
+        return this.message;
+    }
+    
+    /**
+    * @generated
+    */
+    public Message setMessage(Message message) {
+        this.message = message;
+    }
+    
+    /**
+    * @generated
+    */
+    public Message getMessage() {
+        return this.message;
+    }
+    
+    /**
+    * @generated
+    */
+    public Message setMessage(Message message) {
+        this.message = message;
+    }
+    
+    /**
+    * @generated
+    */
+    public Message getMessage() {
+        return this.message;
+    }
+    
+    /**
+    * @generated
+    */
+    public Message setMessage(Message message) {
+        this.message = message;
+    }
+    
+
+    //                          Operations                                  
+    
+    /**
+    * @generated
+    */
+    public posterMessage() {
+        //TODO
+    }
+    /**
+    * @generated
+    */
+    public consulterMessage() {
+        //TODO
+    }
+    /**
+    * @generated
+    */
+    public supprimerMessage() {
+        //TODO
+    }
+    
+}

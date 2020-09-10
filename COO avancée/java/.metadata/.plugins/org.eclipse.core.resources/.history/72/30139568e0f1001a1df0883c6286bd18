@@ -1,0 +1,47 @@
+package Administrateur;
+
+
+/**
+* @generated
+*/
+public class Administrateur extends Membre {
+    
+    
+    /**
+    * @generated
+    */
+    private Forum forum;
+    
+    
+    
+    /**
+    * @generated
+    */
+    public Forum getForum() {
+        return this.forum;
+    }
+    
+    /**
+    * @generated
+    */
+    public Forum setForum(Forum forum) {
+        this.forum = forum;
+    }
+    
+
+    //                          Operations                                  
+    
+    /**
+    * @generated
+    */
+    public afficherMembres() {
+        //TODO
+    }
+    /**
+    * @generated
+    */
+    public creerForum() {
+        //TODO
+    }
+    
+}

@@ -1,0 +1,69 @@
+package Forum;
+
+
+/**
+* @generated
+*/
+public class Forum extends Message {
+    
+    
+    /**
+    * @generated
+    */
+    private Set<Membre> membre;
+    
+    /**
+    * @generated
+    */
+    private Membre membre;
+    
+    /**
+    * @generated
+    */
+    private Administrateur administrateur;
+    
+    
+    
+    /**
+    * @generated
+    */
+    public Membre getMembre() {
+        return this.membre;
+    }
+    
+    /**
+    * @generated
+    */
+    public Membre setMembre(Membre membre) {
+        this.membre = membre;
+    }
+    
+    /**
+    * @generated
+    */
+    public Membre getMembre() {
+        return this.membre;
+    }
+    
+    /**
+    * @generated
+    */
+    public Membre setMembre(Membre membre) {
+        this.membre = membre;
+    }
+    
+    /**
+    * @generated
+    */
+    public Administrateur getAdministrateur() {
+        return this.administrateur;
+    }
+    
+    /**
+    * @generated
+    */
+    public Administrateur setAdministrateur(Administrateur administrateur) {
+        this.administrateur = administrateur;
+    }
+    
+}
