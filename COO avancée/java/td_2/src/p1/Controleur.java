@@ -81,7 +81,6 @@ public class Controleur {
 		currentForum.addMember(currentMember);
 	}
 
-
 	//Méthode utilitaire
 	private Forum getForum() {
 		String nomDuForum = ui.getNomDuForum(registre.getNomForums());
