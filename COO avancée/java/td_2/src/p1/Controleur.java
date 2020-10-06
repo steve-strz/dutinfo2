@@ -8,7 +8,7 @@ import static java.lang.Thread.sleep;
 import java.io.IOException;
 import java.util.Set;
 
-import p1.Member;
+import p1.Membre;
 import p1.Channel;
 import p1.Forum;
 import p1.Gestionnaire;
@@ -20,14 +20,15 @@ public class Controleur {
 	private Gestionnaire registre = new Gestionnaire();
 	private UserConsole ui = new UserConsole();
 
-	private Member currentMember;
+	private Membre currentMember;
 
 	public Controleur() throws ClassNotFoundException, IOException{
 		String nom = ui.getNomMembre();
-		currentMember = new Member(nom);
+		currentMember = new Membre(nom);
 		Object o  = Memory.read("sauvegarde.txt");
-		if (o instanceof Gestionnaire){
-			registre = (Gestionnaire) o;}
+		if (o instanceof Gestionnaire) {
+			registre = (Gestionnaire) o;
+		}
 	}
 
 
@@ -55,7 +56,7 @@ public class Controleur {
 			start();
 			break;
 		case UserConsole.COM_CHANGER_MEMBRE:
-			currentMember = new Member(ui.getNomMembre());
+			currentMember = new Membre(ui.getNomMembre());
 			start();
 			break;
 		case UserConsole.COM_INSCRIRE:
@@ -76,7 +77,7 @@ public class Controleur {
 		}}
 
 	private void inscrireMembreSurForum() {
-		currentMember = new Member(ui.getNomMembre());
+		currentMember = new Membre(ui.getNomMembre());
 		Forum currentForum = registre.getForum(ui.getNomDuForum(registre.getNomForums()));
 		currentForum.addMember(currentMember);
 	}

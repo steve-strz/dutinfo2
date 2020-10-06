@@ -4,8 +4,6 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
-import fr.uca.iut.info.coo.td2.core.Message;
-
 public class UserConsole {
 	Scanner sc = new Scanner(System.in);
 

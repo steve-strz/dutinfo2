@@ -37,6 +37,33 @@
             echo str_replace('test', 'coucou', 'ceci est un test');
             echo '<br/>';
             echo html_entity_decode('<b>ceci est un test</b>');
+            echo '<br/>';
+            echo htmlentities('Un \'apostrophe\' en <strong>gras</strong>');
+            echo '<br/>';
+            $string = "str1 str2 str3";
+            $tab = explode(" ", $string);
+            echo $tab[0]. '<br/>';
+            echo $tab[1]. '<br/>';
+            echo $tab[2]. '<br/>';
+            $array = array('a', 'b', 'c');
+            $comma_separated = implode(",", $array);
+            echo $comma_separated;
+            $str = "Votre nom est-il O'reilly ?";
+            echo addslashes($str);
+            //4.1
+            $tab = array(
+                'Renault', 
+                'Peugeot', 
+                'Citroen', 
+                'Volkswagen'
+            );
+            $tab = [
+                'Renault' => ['Twingo', 'Clio', 'Megane', 'Laguna'], 
+                'Peugeot' => ['107', '207', '308', '508'], 
+                'Citroen' => ['C1', 'C3', 'C4', 'C5'], 
+                'Volkswagen' => ['Lupo', 'Polo', 'Golf', 'Passat']
+            ];
+            echo "$-4000";
         ?>
     </body>
 </html>
