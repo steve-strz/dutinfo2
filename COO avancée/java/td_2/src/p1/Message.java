@@ -30,4 +30,12 @@ public class Message {
 	public boolean readBy(Membre member) {
 		return lecteurs.containsKey(member.getName());
 	}
+	public int getLength() {
+		return this.content.length();
+	}
+	
+	@Override
+	public String toString() {
+		return "'" + this.getContent() + "' - " + this.getAuthor();
+	}
 }

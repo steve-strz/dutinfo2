@@ -15,7 +15,10 @@ public class Membre implements Serializable{
 		return name;
 	}
 
-
+	@Override
+	public String toString() {
+		return this.name;
+	}
 
 	@Override
 	public int hashCode() {

@@ -8,25 +8,25 @@ public class Gestionnaire {
 	private HashMap<String, Forum> forums = new HashMap<String, Forum>();
 	
 	public Set<String> getNomForums() {
-		if(!forums.isEmpty()) {
-			return forums.keySet();
-		}
-		else{
-			return null;
-		}
+		return this.forums.keySet();
 	}
 
 	public Forum getForum(String nomDuForum) {
-		return forums.get(nomDuForum);
+		return this.forums.get(nomDuForum);
 	}
 
 	public boolean exist(String nomDuForum) {
-		return forums.containsKey(nomDuForum);
+		return this.forums.containsKey(nomDuForum);
 	}
 
 	public Forum creerForum(String nomDuForum) {
-		// TODO Auto-generated method stub
-		return null;
+		if(!this.exist(nomDuForum)) {			
+			Forum f = new Forum();
+			this.forums.put(nomDuForum, f);
+			return f;
+		}else {
+			return null;
+		}
 	}
 
 }

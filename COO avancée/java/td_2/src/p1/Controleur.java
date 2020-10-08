@@ -73,7 +73,6 @@ public class Controleur {
 			ui.afficher("La commande spécifiée n'existe pas\n");
 			sleep(1000);
 			start();
-
 		}}
 
 	private void inscrireMembreSurForum() {
@@ -99,14 +98,20 @@ public class Controleur {
 		String nomDuForum = 
 				ui.getNomDuForum(ensembleDesNomsDeForumsExistants);
 		Forum forumNouveau = registre.creerForum(nomDuForum);
-		if (forumNouveau != null)
+		if (forumNouveau != null) {			
 			ui.afficher("Forum " + nomDuForum + ":"+ forumNouveau);
+			forumNouveau.addMember(currentMember); //Si le membre créer le forum, il est automatique membre de celui ci
+		}
 		else
 			ui.afficher("Pbme de creation Forum " + nomDuForum);
 	}
 
 	private void creerCanal(){
 		Forum forum = getForum();
+		if(!forum.isSubscribed(currentMember)) { //Ajout de la possibilité de savoir si un membre est abonné au forum. Si ce n'est pas le cas, il n'a pas le droit d'y accéder.
+			ui.afficher("Vous n'etes pas inscrit a ce forum.");
+			return; 
+		}
 		if (forum != null) {
 			//Récupérer les noms des canaux pré-existants
 			Set <String> nomDesCanaux = forum.getChannelNames();
@@ -120,6 +125,10 @@ public class Controleur {
 
 	private void creerCanalDeBreves() {
 		Forum forum = getForum();
+		if(!forum.isSubscribed(currentMember)) { //Ajout de la possibilité de savoir si un membre est abonné au forum. Si ce n'est pas le cas, il n'a pas le droit d'y accéder.
+			ui.afficher("Vous n'etes pas inscrit a ce forum.");
+			return; 
+		}
 		if (forum != null) {
 			//Récupérer les noms des canaux pré-existants
 			Set <String> nomDesCanaux = forum.getChannelNames();
@@ -136,6 +145,10 @@ public class Controleur {
 		Forum forum = getForum();
 		if (forum == null) {
 			return;
+		}
+		if(!forum.isSubscribed(currentMember)) { //Ajout de la possibilité de savoir si un membre est abonné au forum. Si ce n'est pas le cas, il n'a pas le droit d'y accéder.
+			ui.afficher("Vous n'etes pas inscrit a ce forum.");
+			return; 
 		}
 		String nomDeCanal = ui.getNomCanal(forum.getChannelNames());
 		String msg =  ui.getValeur("saisir le message : ");
@@ -166,6 +179,10 @@ public class Controleur {
 		Forum forum = getForum();
 		if (forum == null) {
 			return;
+		}
+		if(!forum.isSubscribed(currentMember)) { //Ajout de la possibilité de savoir si un membre est abonné au forum. Si ce n'est pas le cas, il n'a pas le droit d'y accéder.
+			ui.afficher("Vous n'etes pas inscrit a ce forum.");
+			return; 
 		}
 		String nomDeCanal = ui.getNomCanal(forum.getChannelNames());
 		Channel canal = forum.getChannel(nomDeCanal);
