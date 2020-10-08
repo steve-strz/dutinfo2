@@ -6,6 +6,7 @@ import static java.lang.System.exit;
 import static java.lang.Thread.sleep;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Set;
 
 import p1.Membre;
@@ -55,8 +56,16 @@ public class Controleur {
 			lireMessage();
 			start();
 			break;
+		case UserConsole.COM_LISTE_FORUM_ADMIN:
+			afficherListeForumAdmin();
+			start();
+			break;
 		case UserConsole.COM_CHANGER_MEMBRE:
 			currentMember = new Membre(ui.getNomMembre());
+			start();
+			break;
+		case UserConsole.COM_EFFACER_MESSAGES:
+			clearMessages();
 			start();
 			break;
 		case UserConsole.COM_INSCRIRE:
@@ -90,20 +99,44 @@ public class Controleur {
 		}
 		return registre.getForum(nomDuForum);
 	}
-
+	
+	private void afficherListeForumAdmin() {
+		HashMap<String, Forum> forums = registre.getAllForums();
+		ui.afficher("Voici la liste des forums dont vous etes l'admin :");
+		for(Forum f : forums.values()) {
+			if(f.isOwner(currentMember)) {
+				ui.afficher("- " + f.getName());
+			}
+		}
+	}
 
 	private void creerForum() {
 		//Récupérer la liste des noms des forums
 		Set<String> ensembleDesNomsDeForumsExistants = registre.getNomForums();
 		String nomDuForum = 
 				ui.getNomDuForum(ensembleDesNomsDeForumsExistants);
-		Forum forumNouveau = registre.creerForum(nomDuForum);
+		Forum forumNouveau = registre.creerForum(nomDuForum, currentMember);
 		if (forumNouveau != null) {			
-			ui.afficher("Forum " + nomDuForum + ":"+ forumNouveau);
+			ui.afficher("Forum creer :" + nomDuForum);
 			forumNouveau.addMember(currentMember); //Si le membre créer le forum, il est automatique membre de celui ci
 		}
 		else
 			ui.afficher("Pbme de creation Forum " + nomDuForum);
+	}
+	
+	private void clearMessages() {
+	    Forum forum = getForum();
+	    if(forum == null) {
+	        return;
+	    }
+	    String nomDeCanal = ui.getNomCanal(forum.getChannelNames());
+	    Channel canal = forum.getChannel(nomDeCanal);
+	    if(canal == null)
+	        ui.afficher("Ce Canal "+ nomDeCanal + " n'existe pas");
+	    else {
+	        canal.clearMessages();
+	        ui.afficher("Les messages du canal " + nomDeCanal + " ont été effacés");
+	    }
 	}
 
 	private void creerCanal(){

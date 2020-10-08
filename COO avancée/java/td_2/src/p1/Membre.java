@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 public class Membre implements Serializable{
 
-
 	private String name;
 
 	public Membre(String pname) {

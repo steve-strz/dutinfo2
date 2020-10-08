@@ -12,10 +12,12 @@ public class UserConsole {
 	public static final char COM_CREER_CANAL = 'c';
 	public static final char COM_LIRE_MESSAGES = 'l';
 	public static final char COM_POSTER_MESSAGES = 'p';
+	public static final char COM_EFFACER_MESSAGES = 'e';
 	public static final char COM_STOP = 's';
 	public static final char COM_CHANGER_MEMBRE = 'm';
 	public static final char COM_INSCRIRE = 'i';
 	public static final char COM_CREER_CANAL_DE_BREVES = 'b';
+	public static final char COM_LISTE_FORUM_ADMIN = 'a';
 	
 	//On pourra modifier facilement pour par exemple utiliser des logger.
 	private final void sop(String s) {
@@ -29,8 +31,10 @@ public class UserConsole {
 		sop("creer Canal de brèves: " + COM_CREER_CANAL_DE_BREVES);
 		sop("lire messages : " + COM_LIRE_MESSAGES);
 		sop("poster un nouveau message : " + COM_POSTER_MESSAGES);
+		sop("Effacer message d'un cannal: " + COM_EFFACER_MESSAGES);
 		sop("changer de membre : " + COM_CHANGER_MEMBRE ) ;
 		sop("s'inscrire : " + COM_INSCRIRE ) ;
+		sop("lister les forums dont je suis administrateur : " + COM_LISTE_FORUM_ADMIN );
 		sop("stop : " + COM_STOP);
 		sop("Que voulez-vous faire ?");
 		String str = sc.nextLine().toLowerCase();

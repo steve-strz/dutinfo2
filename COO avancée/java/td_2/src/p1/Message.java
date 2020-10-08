@@ -1,8 +1,9 @@
 package p1;
 
 import java.util.HashMap;
+import java.io.Serializable;
 
-public class Message {
+public class Message implements Serializable{
 
 	private String content;
 	private Membre author;
