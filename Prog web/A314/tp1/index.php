@@ -63,7 +63,18 @@
                 'Citroen' => ['C1', 'C3', 'C4', 'C5'], 
                 'Volkswagen' => ['Lupo', 'Polo', 'Golf', 'Passat']
             ];
-            echo "$-4000";
+            $html = '<table> <tbody> <tr>';
+            foreach ($tab as $key => $value) {
+                //echo($key);
+                $html .= '<th>' .$key. '</th>';
+                foreach ($value as $key2 => $value2) {
+                    //echo $value2;
+                    $html .= '<td>' .$value2. '</td>';
+                }
+                $html .= '</tr> <tr>';
+            }
+            $html .= '</tr> </tbody> </table>';
+            echo $html;
         ?>
     </body>
 </html>
