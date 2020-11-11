@@ -8,6 +8,7 @@
           echo countWords("Ceci est une phrase  dd sfs a ") .'<br/>';
           echo countSentences("Ceci est une phrase. En voici une deuxieme. Et une troisieme.") .'<br/>';
           echo reverseWordsFromSentence("Ceci est une phrase. En voici une deuxieme. Et une troisieme.") .'<br/>';
+          echo countSpecialChars("Ceci ! ! est une ... ... phrase ; , ; , ; .") .'<br/>';
         ?>
     </head>
     <body>
@@ -57,13 +58,19 @@
               }else{
                 array_push($wordsArray, $word);
                 $word = "";
-                echo count($wordsArray);
-                for ($i=count($wordsArray); $i > 0 ; $i--) { 
-                  echo $wordsArray[$i];
+                for ($j=count($wordsArray)-1; $j >= 0 ; $j--) { 
+                  echo $wordsArray[$j]. " ";
                 }
+                echo ".";
                 $wordsArray = array();
               }
             }
+          }
+
+          //exo1.4
+          // nbr mot  ,  ;  !  ? ...
+          function countSpecialChars($string){
+            countWords($string);
           }
         ?>
     </body>
