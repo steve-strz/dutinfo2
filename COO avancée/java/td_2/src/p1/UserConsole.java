@@ -32,8 +32,8 @@ public class UserConsole {
 		sop("lire messages : " + COM_LIRE_MESSAGES);
 		sop("poster un nouveau message : " + COM_POSTER_MESSAGES);
 		sop("Effacer message d'un cannal: " + COM_EFFACER_MESSAGES);
-		sop("changer de membre : " + COM_CHANGER_MEMBRE ) ;
-		sop("s'inscrire : " + COM_INSCRIRE ) ;
+		sop("changer de membre : " + COM_CHANGER_MEMBRE );
+		sop("s'inscrire : " + COM_INSCRIRE );
 		sop("lister les forums dont je suis administrateur : " + COM_LISTE_FORUM_ADMIN );
 		sop("stop : " + COM_STOP);
 		sop("Que voulez-vous faire ?");
@@ -50,6 +50,25 @@ public class UserConsole {
 	public String getNomMembre() {
 		sop("quel est votre nom ?");
 		return  sc.nextLine();
+	}
+	
+	public String getForumType() {
+		sop("Type du forum ?");
+		sop("1: Community; 2: Premium; 3: Pro; 4: Annuler la création du forum.");
+		while(true) {			
+			switch (sc.nextLine()) {
+			case "1":
+				return "Community";
+			case "2":
+				return "Premium";
+			case "3":
+				return "Pro";
+			case "4":
+				return null;
+			default:
+				sop("Chiffre non compris, veuillez réessayez.");
+			}
+		}
 	}
 	
 	public void afficherMessages(List<Message> arrayList) {

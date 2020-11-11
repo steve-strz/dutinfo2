@@ -34,12 +34,16 @@ public class Forum implements Serializable{
 		return this.membersList.contains(m);
 	}
 	
+	public void setForumType(String t) {
+		this.type = t;
+	}
+	
 	public Set<String> getChannelNames() {
 		return this.channels.keySet();
 	}
 
 	public boolean addChannel(String nomDeCanal) {
-		if(!this.exist(nomDeCanal)) {			
+		if(!this.exist(nomDeCanal) && this.canAddChannel()) {			
 			Channel c = new Channel(nomDeCanal);
 			this.channels.put(nomDeCanal, c);
 			return true;
@@ -47,15 +51,31 @@ public class Forum implements Serializable{
 	}
 
 	public boolean addChannelOfBriefs(String nomDeCanal, int maxSize) {
-		if(!this.exist(nomDeCanal)) {			
+		if(!this.exist(nomDeCanal) && this.canAddChannel()) {			
 			Channel c = new Channel(nomDeCanal, maxSize);
 			this.channels.put(nomDeCanal, c);
 			return true;
-		}else return false;
+		}else { 
+			System.out.println("Le nom du channel est déjà prit ou le nombre de channels possible est depasse.");
+			return false;
+		}
 	}
 	
 	public boolean exist(String name) {
 		return this.channels.containsKey(name);
+	}
+	
+	public boolean canAddChannel() {
+		switch (this.type) {
+			case "Community":
+				return this.channels.size() < 2;
+			case "Premium":
+				return this.channels.size() < 5;
+			case "Pro":
+				return true;
+			default:
+				return false;
+		}
 	}
 
 	public Collection<Channel> getChannels() {

@@ -112,13 +112,19 @@ public class Controleur {
 
 	private void creerForum() {
 		//Récupérer la liste des noms des forums
+		String str = ui.getForumType();
+		if(str == null) {
+			ui.afficher("Annulation de la création du forum.");
+			return;
+		}
 		Set<String> ensembleDesNomsDeForumsExistants = registre.getNomForums();
 		String nomDuForum = 
 				ui.getNomDuForum(ensembleDesNomsDeForumsExistants);
 		Forum forumNouveau = registre.creerForum(nomDuForum, currentMember);
-		if (forumNouveau != null) {			
-			ui.afficher("Forum creer :" + nomDuForum);
-			forumNouveau.addMember(currentMember); //Si le membre créer le forum, il est automatique membre de celui ci
+		if (forumNouveau != null) {
+			forumNouveau.setForumType(str);
+			ui.afficher("Forum creer : " + nomDuForum + ", de type '" + str + "'");
+			forumNouveau.addMember(currentMember); //Si le membre créer le forum, il est automatiquement membre de celui ci
 		}
 		else
 			ui.afficher("Pbme de creation Forum " + nomDuForum);

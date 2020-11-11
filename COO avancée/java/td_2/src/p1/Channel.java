@@ -7,7 +7,7 @@ import java.util.List;
 public class Channel implements Serializable{
 	
 	private String name;
-	private final int MAX_MESSAGES = 1;
+	private final int MAX_MESSAGES = 999;
 	private int maxSize;
 	private List<Message> messages = new ArrayList<Message>();
 
@@ -51,6 +51,10 @@ public class Channel implements Serializable{
 	
 	public boolean isFullOfMessages() {
 		return this.messages.size() == this.MAX_MESSAGES;
+	}
+	
+	public boolean isEmpty() {
+		return this.messages.size() == 0;
 	}
 
 }
