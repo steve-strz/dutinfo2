@@ -1,0 +1,48 @@
+
+M
+java:S14810"+Remove this unused "visual" local variable.(‚”­ğûÿÿÿÿ8€§¡Êâ.
+e
+java:S2095‰"IUse try-with-resources or close this "PrintWriter" in a "finally" clause.(‰¯ªÙıÿÿÿÿ
+?	java:S108¶")Either remove or fill this block of code.(¦‘Ğê
+c
+java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(¡ïÛì
+b
+java:S2142İ"FEither re-interrupt this method or rethrow the "InterruptedException".(ÇâŞáøÿÿÿÿ
+[
+java:S1854>"9Remove this useless assignment to local variable "array".(¢…àıÿÿÿÿ8™¢±Ëâ.
+U
+java:S1128"?Remove this unused import 'pacman.controllers.examples.Legacy'.(ùÎƒ®
+O	java:S106„"9Replace this use of System.out or System.err by a logger.(ü¶
+X	java:S1256"<This block of commented-out lines of code should be removed.(£´ëÔ8’Å¡Êâ.
+p
+java:S2293™"YReplace the type specification in this constructor call with the diamond operator ("<>").(—±¼Û
+V	java:S125X"<This block of commented-out lines of code should be removed.(òÛóÁùÿÿÿÿ
+V
+java:S1854/"9Remove this useless assignment to local variable "delay".(”îÒÅ8€§¡Êâ.
+L
+java:S1481>"*Remove this unused "array" local variable.(¢…àıÿÿÿÿ8™¢±Ëâ.
+Q	java:S125`"<This block of commented-out lines of code should be removed.(¼üÇ“
+T	java:S106"9Replace this use of System.out or System.err by a logger.(¯‰ùÿÿÿÿ
+]	java:S125?"<This block of commented-out lines of code should be removed.(è¥ı¯üÿÿÿÿ8™¢±Ëâ.
+O	java:S106’"9Replace this use of System.out or System.err by a logger.(äÆ¥³
+K
+java:S1481‰"-Remove this unused "avgScore" local variable.(À¦™”8äª£Ëâ.
+b
+java:S2184™"FCast one of the operands of this multiplication operation to a "long".(ÿÿôÂÿÿÿÿÿ
+X	java:S125D"<This block of commented-out lines of code should be removed.(´õ‘Ì8¼ü Êâ.
+Q	java:S125P"<This block of commented-out lines of code should be removed.(×Ï°¬
+a
+java:S1128"LRemove this unused import 'pacman.controllers.examples.NearestPillPacManVS'.(±»…+
+G
+java:S1481/"*Remove this unused "delay" local variable.(”îÒÅ8€§¡Êâ.
+b
+java:S2142ú"FEither re-interrupt this method or rethrow the "InterruptedException".(ÇâŞáøÿÿÿÿ
+b
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ÇâŞáøÿÿÿÿ
+U	java:S106="9Replace this use of System.out or System.err by a logger.(ËõŒù8á± Êâ.
+]	java:S125;"<This block of commented-out lines of code should be removed.(ß€Ï´ÿÿÿÿÿ8ĞıŸÊâ.
+b
+java:S2142Î"FEither re-interrupt this method or rethrow the "InterruptedException".(ÇâŞáøÿÿÿÿ
+\
+java:S2259Ï"@A "NullPointerException" could be thrown; "gv" is nullable here.(ôÒ¹øÿÿÿÿ
+T	java:S106@"9Replace this use of System.out or System.err by a logger.(ä¬²8á± Êâ.

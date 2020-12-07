@@ -1,0 +1,66 @@
+
+™
+java:S1319"~The type of the "junctionIndexConverter" object should be an interface such as "Map" rather than the implementation "HashMap".(ÊÎõÙüÿÿÿÿ
+’
+java:S1319É"{The type of the "closestJunctions" object should be an interface such as "List" rather than the implementation "ArrayList".(‡­Ó
+}
+java:S1104"bMake junctionIndexConverter a static final constant or non-public and provide accessors if needed.(ÊÎõÙüÿÿÿÿ
+l
+java:S1104"QMake nodes a static final constant or non-public and provide accessors if needed.(û»©ùÿÿÿÿ
+p
+java:S1104"UMake junctions a static final constant or non-public and provide accessors if needed.(ÉŒã²şÿÿÿÿ
+k
+java:S1104"PMake game a static final constant or non-public and provide accessors if needed.(§ª±üÿÿÿÿ
+i
+java:S1104¢"RMake nodeID a static final constant or non-public and provide accessors if needed.(£ÊÊ£
+r
+java:S1104¢"[Make nodeStartedFrom a static final constant or non-public and provide accessors if needed.(£ÊÊ£
+q
+java:S1104£"UMake firstMove a static final constant or non-public and provide accessors if needed.(ŞË¾”ûÿÿÿÿ
+p
+java:S1104£"TMake lastMove a static final constant or non-public and provide accessors if needed.(ŞË¾”ûÿÿÿÿ
+l
+java:S1104¤"PMake path a static final constant or non-public and provide accessors if needed.(”ÂÚ¸üÿÿÿÿ
+s
+java:S1104¤"WMake reversePath a static final constant or non-public and provide accessors if needed.(”ÂÚ¸üÿÿÿÿ
+i
+java:S1104È"RMake nodeID a static final constant or non-public and provide accessors if needed.(–¸İÆ
+s
+java:S1104É"\Make closestJunctions a static final constant or non-public and provide accessors if needed.(‡­Ó
+m
+java:S1104Ê"VMake isJunction a static final constant or non-public and provide accessors if needed.(‡Ñ–¢
+h
+java:S1104‹"QMake jctId a static final constant or non-public and provide accessors if needed.(™Ãõ¹
+i
+java:S1104‹"RMake nodeId a static final constant or non-public and provide accessors if needed.(™Ãõ¹
+m
+java:S1104Œ"QMake paths a static final constant or non-public and provide accessors if needed.(ı ãøÿÿÿÿ
+t
+java:S2293""YReplace the type specification in this constructor call with the diamond operator ("<>").(¼Øİºüÿÿÿÿ
+h
+java:S3776m"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(Óî—
+Q	java:S125¹"<This block of commented-out lines of code should be removed.(¸«‚}
+Y
+java:S1117Á"=Rename "junctions" which hides the field declared at line 29.(³Â÷¢ùÿÿÿÿ
+i
+java:S3776Ù"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(×÷Üª
+u
+java:S2293ë"YReplace the type specification in this constructor call with the diamond operator ("<>").(×ïû‘şÿÿÿÿ
+D
+java:S1659¢"-Declare "nodeStartedFrom" on a separate line.(£ÊÊ£
+B
+java:S1659£"&Declare "lastMove" on a separate line.(ŞË¾”ûÿÿÿÿ
+E
+java:S1659¤")Declare "reversePath" on a separate line.(”ÂÚ¸üÿÿÿÿ
+\
+java:S1117¶"@Rename "reversePath" which hides the field declared at line 292.(â§àÇúÿÿÿÿ
+p
+java:S2293Ñ"YReplace the type specification in this constructor call with the diamond operator ("<>").(±Ö¬º
+=
+java:S1168à"&Return an empty array instead of null.(¥¹ï
+;
+java:S1659‹"$Declare "nodeId" on a separate line.(™Ãõ¹
+n
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(İÅ®øÿÿÿÿ
+p
+java:S2293·"YReplace the type specification in this constructor call with the diamond operator ("<>").(êÉÄ»

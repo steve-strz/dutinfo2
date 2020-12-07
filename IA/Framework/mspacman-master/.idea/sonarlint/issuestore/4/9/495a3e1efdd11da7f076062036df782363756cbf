@@ -1,0 +1,13 @@
+
+K
+java:S2446+"0"notify" may not wake up the appropriate thread.(óÄ£¶øÿÿÿÿ
+@
+java:S1659"*Declare "wasSignalled" on a separate line.(ª³Ô
+U
+java:S1161e":Add the "@Override" annotation above this method signature(ÿŸ¾Ğüÿÿÿÿ
+K
+java:S2446>"0"notify" may not wake up the appropriate thread.(óÄ£¶øÿÿÿÿ
+a
+java:S2142["FEither re-interrupt this method or rethrow the "InterruptedException".(ÇâŞáøÿÿÿÿ
+?
+java:S1659")Declare "hasComputed" on a separate line.(ª³Ô

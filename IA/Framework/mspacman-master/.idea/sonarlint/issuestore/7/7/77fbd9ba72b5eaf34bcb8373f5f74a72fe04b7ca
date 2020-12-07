@@ -1,0 +1,114 @@
+
+d	java:S100•"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹Ä€î
+B
+java:S16591",Declare "pacmanWasEaten" on a separate line.(ÿ£Øº
+I
+java:S1905—
+"&Remove this unnecessary cast to "int".(¿Ññ¦ıÿÿÿÿ8Óß·Èâ.
+u
+java:S2293‘"YReplace the type specification in this constructor call with the diamond operator ("<>").(‚‚ÃÒùÿÿÿÿ
+‰
+java:S1319ü"rThe type of the "ghostMoves" object should be an interface such as "Map" rather than the implementation "EnumMap".(®¼£¼
+m
+java:S1104B"RMake caches a static final constant or non-public and provide accessors if needed.(·çµıúÿÿÿÿ
+>
+java:S1659-"(Declare "powerPills" on a separate line.(Çã¨«
+B
+java:S1172³"+Remove this unused method parameter "maze".(î‹É
+@
+java:S16591"*Declare "pillWasEaten" on a separate line.(ÿ£Øº
+K
+java:S1066’"/Merge this if statement with the enclosing one.(Ûè±¬ıÿÿÿÿ
+>
+java:S1659/"#Declare "score" on a separate line.(´–ì×ÿÿÿÿÿ
+B
+java:S1659/"'Declare "totalTime" on a separate line.(´–ì×ÿÿÿÿÿ
+p
+java:S2293Ò"YReplace the type specification in this constructor call with the diamond operator ("<>").(¯¸ôò
+d	java:S100¢"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆÓĞ
+p
+java:S2293´"YReplace the type specification in this constructor call with the diamond operator ("<>").(à«æ´
+‰
+java:S1319¢"rThe type of the "ghostMoves" object should be an interface such as "Map" rather than the implementation "EnumMap".(ÔÇ°
+c
+java:S2184‰
+"ECast one of the operands of this subtraction operation to a "double".(Áö„Ù8Óß·Èâ.
+7
+java:S11169"Remove this empty statement.(‡ÀÕ„ùÿÿÿÿ
+d	java:S100Œ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æğ¯€
+d	java:S100á"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚ü‘·
+K
+java:S1066¨"/Merge this if statement with the enclosing one.(üÿ¾¿úÿÿÿÿ
+8
+java:S2386B"Make this member "protected".(·çµıúÿÿÿÿ
+K
+java:S1659/"0Declare "ghostEatMultiplier" on a separate line.(´–ì×ÿÿÿÿÿ
+h	java:S100}"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Úà³øÿÿÿÿ
+d	java:S100³"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î‹É
+
+java:S1319ê"rThe type of the "ghostMoves" object should be an interface such as "Map" rather than the implementation "EnumMap".(Šü­¦üÿÿÿÿ
+d	java:S100ğ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½–ş
+d	java:S100ë"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ¿Æ£
+f
+java:S1874Å
+"JRemove this use of "getApproximateShortestPathDistance"; it is deprecated.(«Úğ…şÿÿÿÿ
+‰
+java:S1319§"rThe type of the "ghostMoves" object should be an interface such as "Map" rather than the implementation "EnumMap".(Èå™ú
+L
+java:S16590"6Declare "timeOfLastGlobalReversal" on a separate line.(ŞÂƒ…
+ˆ
+java:S1319ğ"rThe type of the "ghostMoves" object should be an interface such as "Map" rather than the implementation "EnumMap".(ºÿ—
+u
+java:S2293‡"YReplace the type specification in this constructor call with the diamond operator ("<>").(ºÙàÔşÿÿÿÿ
+d	java:S100²"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Š€¶
+_
+java:S1123ü"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+i	java:S100¤"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­©òŒüÿÿÿÿ
+Q
+java:S1133Ú"5Do not forget to remove this deprecated code someday.(…£Üáÿÿÿÿÿ
+i	java:S100á"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥½¤ãıÿÿÿÿ
+u
+java:S2293¾"YReplace the type specification in this constructor call with the diamond operator ("<>").(‚‚ÃÒùÿÿÿÿ
+i
+java:S3776¢"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ˆÓĞ
+d	java:S100£"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü¥¬à
+_
+java:S1123Ù"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+Q
+java:S1133¥"5Do not forget to remove this deprecated code someday.(ÖòúÂşÿÿÿÿ
+ˆ
+java:S1319›"rThe type of the "ghostMoves" object should be an interface such as "Map" rather than the implementation "EnumMap".(¸†›.
+E
+java:S16591"/Declare "powerPillWasEaten" on a separate line.(ÿ£Øº
+d	java:S100Ë"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö¡€ñ
+d	java:S100½"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âÜÄÙ
+M
+java:S5411ó"*Use the primitive boolean expression here.(õˆÀÏşÿÿÿÿ8Óß·Èâ.
+D
+java:S1121Œ".Extract the assignment out of this expression.(Øá(
+u
+java:S2293­"YReplace the type specification in this constructor call with the diamond operator ("<>").(ºÙàÔşÿÿÿÿ
+C
+java:S1659/"(Declare "levelCount" on a separate line.(´–ì×ÿÿÿÿÿ
+d	java:S100ÿ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò—–Ç
+i	java:S100Î"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æã«­ûÿÿÿÿ
+c
+java:S2184‡
+"ECast one of the operands of this subtraction operation to a "double".(ßàÔ8Óß·Èâ.
+F
+java:S1066ä"/Merge this if statement with the enclosing one.(ºëî
+p
+java:S2293Ñ"YReplace the type specification in this constructor call with the diamond operator ("<>").(­¥Š™
+_
+java:S1123¤"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+ˆ
+java:S1319ö"rThe type of the "ghostMoves" object should be an interface such as "Map" rather than the implementation "EnumMap".(ËëÊw
+G
+java:S1444B",Make this "public static caches" field final(·çµıúÿÿÿÿ
+D
+java:S1121š".Extract the assignment out of this expression.(Øá(
+I
+java:S1659/".Declare "currentLevelTime" on a separate line.(´–ì×ÿÿÿÿÿ
+d	java:S100‡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í¥˜Î
+Q
+java:S1133ı"5Do not forget to remove this deprecated code someday.(¾´¾ïıÿÿÿÿ

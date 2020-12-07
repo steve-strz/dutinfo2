@@ -1,0 +1,27 @@
+
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+X
+(src/pacman/game/internal/PathsCache.java,a/c/ac79e2487b147fc385e42bff33f4f5cd4a245fa7
+S
+#src/pacman/game/internal/AStar.java,7/9/7956ff36134e8516c694020e0c1a4bd0f3940688
+I
+src/pacman/game/Game.java,7/7/77fbd9ba72b5eaf34bcb8373f5f74a72fe04b7ca
+g
+7src/pacman/controllers/examples/RandomNonRevPacMan.java,8/f/8fac5576f793ef1cebff52b9585cf99dbb75c882
+a
+1src/pacman/controllers/examples/RandomPacMan.java,9/1/91ae5992412daa2992443fc3acbb8f19087e53ac
+T
+$src/pacman/game/internal/PacMan.java,0/e/0e09acbaf78680aeffe46449e9a1e5e7970698f7
+[
++src/pacman/controllers/HumanController.java,a/6/a6ce054d28352e402a715e9fb11b8a14ec57433b
+Y
+)src/pacman/controllers/KeyBoardInput.java,0/8/08437431ac4b326ddaee80a1746d931a1236bda7
+V
+&src/pacman/controllers/Controller.java,4/9/495a3e1efdd11da7f076062036df782363756cbf
+f
+6src/pacman/controllers/examples/NearestPillPacMan.java,a/0/a099758f95d0f4f9c7c1b75e8139d879baeb1d4a
+H
+src/pacman/Executor.java,5/7/5777057c31f8bf38e1afa9fcdcbdde707dfa4dde
+b
+2src/pacman/controllers/examples/StarterPacMan.java,b/6/b6982b42af44b94c162fba5d140fc45405388806

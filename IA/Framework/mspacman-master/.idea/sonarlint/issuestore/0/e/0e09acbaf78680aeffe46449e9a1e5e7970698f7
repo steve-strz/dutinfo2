@@ -1,0 +1,14 @@
+
+s
+java:S1104"XMake lastMoveMade a static final constant or non-public and provide accessors if needed.(½ÈÉƒşÿÿÿÿ
+O
+java:S1659
+"4Declare "numberOfLivesRemaining" on a separate line.(Á ãèùÿÿÿÿ
+w
+java:S1104
+"\Make currentNodeIndex a static final constant or non-public and provide accessors if needed.(Á ãèùÿÿÿÿ
+}
+java:S1104
+"bMake numberOfLivesRemaining a static final constant or non-public and provide accessors if needed.(Á ãèùÿÿÿÿ
+{
+java:S1104"`Make hasReceivedExtraLife a static final constant or non-public and provide accessors if needed.(Û’šüÿÿÿÿ
