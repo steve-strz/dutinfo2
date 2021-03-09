@@ -1,7 +1,7 @@
 <?php
     try{
         $user="on40ftz4_admin";
-        $pass="Wolf123wars789";
+        $pass="";
         $co = new PDO('mysql:host=devdut.site;dbname=on40ftz4_homeworks', $user, $pass);
         $sql = 'SELECT * FROM homework';
         $result = array();
